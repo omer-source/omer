@@ -3,65 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Améliorée</title>
+    <title>Booste ta Visibilité | Créateur de Contenu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #fff;
-            text-align: center;
             margin: 0;
             padding: 0;
-        }
-        h1 {
-            font-size: 3rem;
-            text-shadow: 0 0 10px #0ff;
-            transition: text-shadow 0.3s ease-in-out;
-        }
-        h1:hover {
-            text-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
+            background-color: #f9f9f9;
+            color: #ffffff;
+            text-align: center;
+            background-color: #001f3f;
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero {
+            background-color: #ff851b;
+            color: white;
+            padding: 50px 20px;
+            border-radius: 10px;
         }
         .btn {
-            background: linear-gradient(45deg, #ff00ff, #00ffff);
-            padding: 15px 30px;
-            border: none;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            background-color: #ff851b;
             color: white;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0 0 10px #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
         }
-        .btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
-        }
-        .illustration {
-            width: 300px;
-            height: 200px;
-            background: url('https://source.unsplash.com/300x200/?technology') center/cover;
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #00264d;
             border-radius: 10px;
-            box-shadow: 0 0 10px #ff00ff;
-            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .illustration:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px #ff00ff, 0 0 30px #0ff;
+        .form-container {
+            background: #00264d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: white;
+            color: #000;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #ff851b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .hero {
+                padding: 30px 10px;
+            }
+            .btn {
+                padding: 10px 20px;
+            }
+            .section, .form-container {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenue sur Mon Projet</h1>
-        <div class="illustration"></div>
-        <button class="btn">Découvrir</button>
+        <div class="hero">
+            <h1>🚀 BESOIN D'UN CONTENU QUI CARTONNE SUR LES RÉSEAUX ?</h1>
+            <p>Booste ta visibilité & attire plus de clients avec du contenu percutant !</p>
+            <a href="#contact" class="btn">Réserver un appel</a>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 Créateur de Contenu & Social Media Manager</h2>
+            <p>Je transforme tes réseaux sociaux en machine à engagement et conversion.</p>
+        </div>
+        
+        <div class="section">
+            <h2>💡 Le Problème</h2>
+            <p>Tu galères à avoir de la visibilité ? Peu d'engagement, peu de vues ? Manque de stratégie et de régularité ?</p>
+        </div>
+        
+        <div class="section">
+            <h2>🔥 Des Résultats qui Parlent</h2>
+            <p>📈 +50K vues en 7 jours | 📈 +30% d'engagement en 1 mois | 📈 +100 leads qualifiés</p>
+        </div>
+        
+        <div class="section" id="contact">
+            <h2>🚀 Prêt à exploser ta visibilité ?</h2>
+            <p>📩 DM moi "BOOST" sur Instagram | 📅 Réserve un appel GRATUIT</p>
+            <a href="https://wa.me/message/5SXA37QXVNKBK1" class="btn">Me Contacter sur WhatsApp</a>
+            <a href="https://handsomely-panda-0f8.notion.site/Services-de-Cr-ation-de-Visuels-Produits-19da993a74228087a6eee725941e8b91?pvs=4" class="btn">Voir Mes Services</a>
+        </div>
+        
+        <div class="form-container">
+            <h2>📩 Contacte-moi</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Ton nom" required>
+                <input type="email" name="email" placeholder="Ton email" required>
+                <textarea name="message" rows="4" placeholder="Ton message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
